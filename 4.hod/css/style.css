@@ -1,0 +1,25 @@
+body {
+    background-color: aqua;
+}
+#block {
+    text-align: center;
+}
+.parent-block {
+    background-color: #ffffff;
+}
+.child1{
+    background-color: purple;
+    height: 100px;
+}
+.child2{
+    background-color: blue;
+    height: 100px;
+}
+.child3{
+    background-color: red;
+    height: 100px;
+}
+.child4{
+    background-color: green;
+    height: 100px;
+}
