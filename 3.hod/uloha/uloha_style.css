@@ -30,4 +30,18 @@ body{
 .text {
     text-align: center;
 }
-
+header {
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.text{
+    align-content: center;
+}
+footer{
+    display: flex;
+    ;
+}
