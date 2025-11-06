@@ -1,0 +1,2 @@
+vytvoriť stránku podla obrázku
+zakomponovat keyframes
