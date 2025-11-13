@@ -1,0 +1,43 @@
+.header{
+    background-color: rebeccapurple;
+    
+}
+
+.header-content{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link{
+    height: 57px;
+    width: auto;
+}
+
+.logo-img{
+
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav-item{
+
+}
+
+.nav-link{
+
+}
+
+.btn{
+    height: 57px;
+    width: auto;
+}
+
+.contact{
+
+}
