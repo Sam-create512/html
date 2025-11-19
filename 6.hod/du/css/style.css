@@ -1,28 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header{
-    background-color: rebeccapurple;
-    
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
 }
 
 .header-content{
+    max-width: 2560px;
+    margin: 0 auto;
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
+    min-height: 100px;
+    padding: 0 150px;    
 }
 
 .logo-link{
     height: 57px;
     width: auto;
+    text-decoration: none;
 }
 
-.logo-img{
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 57px;
+    justify-content: center;
+    color: black; 
+    width: 100%;
+    text-transform: uppercase;
+}
 
+.upper-logo{
+    font-family: Bodoni Moda;
+    font-weight: 00;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.lower-logo{
+    margin-top: 2px;
+    font-size: 13px;
+    letter-spacing: 1.75px;
+    opacity: 0.6;
+}
+
+.nav{
+    font-family:Roboto;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 .nav-list{
     list-style-type: none;
     display: flex;
-    column-gap: 20px;
+    column-gap: 25px;
 }
 
 .nav-item{
@@ -30,14 +73,73 @@
 }
 
 .nav-link{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
 
+.arrow{
+    display: inline-block;
+    margin-left: 2px;
+    width: 0;
+    height: 0;
+    border-width: 6px 5px 0 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0) transparent;
+    vertical-align: middle;
+}
+
+.btn-link{
+    height: 57px;
+    width: 200px;
+    text-decoration: none;
+    color: black;
 }
 
 .btn{
     height: 57px;
     width: auto;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid black;
+    justify-content: center;
+    font-family: Roboto;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    font-size: 17px;
 }
 
-.contact{
+.nav-link::after{
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    opacity: 0;
+    transition: all .3s;
+}
 
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+.article-top{
+    display: flex;
+    background-image: url(../pictures/skyscrapers2.jpg);
+    height: 950px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-top-center{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
 }

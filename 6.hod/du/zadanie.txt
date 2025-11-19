@@ -1,2 +1,6 @@
 vytvoriť stránku podla obrázku
 zakomponovat keyframes
+upravit velkost headeru
+keyframes hover
+btn div
+trojuholnicky
