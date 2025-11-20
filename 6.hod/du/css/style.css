@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -109,7 +110,9 @@
     word-spacing: 1.5px;
     font-size: 17px;
 }
+/* .btn:active{
 
+} */
 .nav-link::after{
     position: absolute;
     left: 0;
@@ -130,10 +133,13 @@
 .article-top{
     display: flex;
     background-image: url(../pictures/skyscrapers2.jpg);
-    height: 950px;
+    height: 800px;
     width: auto;
     background-size: cover;
     background-position: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -141,5 +147,46 @@
 .article-top-center{
     text-transform: uppercase;
     color: rgb(255, 255, 255);
+    font-family: Roboto Condensed;
     font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+
+}
+
+.article-top-center-bottom{
+    color: white;
+    font-size: 18px;
+}
+.button-top{
+    height: 57px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    border: .5px solid black;
+    font-family: Roboto;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    font-size: 18px;
+    color: white;
+    border-color: white;
+    margin-top: 30px;
+}
+
+.article-middle{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-article-middle{
+
+}
+
+.article-middle-text{
+
 }
