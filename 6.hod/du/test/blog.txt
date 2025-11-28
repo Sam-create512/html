@@ -1,0 +1,11 @@
+        <!-- Article blog start -->
+        <article class="article-blog" id="blog">
+            <div class="article-nav article-blog-name">blog</div>
+            <div class="article-blog-area">
+                <div class="blog-part-one"><a href="https://blog.chaos.com/what-is-3d-visualization-main-benefits-and-use-cases" target="_blank" class="blog-part"><div class="blog-part-text">Why 3D Visualization Matters in Modern Projects</div></a></div>
+                <div class="blog-part-two"><a href="https://sk.pinterest.com/CPC3/interior-design/" target="_blank" class="blog-part"><div class="blog-part-text">Top Interior Design Trends for 2025</div></a></div>
+                <div class="blog-part-three"><a href="https://www.climatechangewriters.com/stories/building-the-future-how-sustainable-architecture-is-leading-the-way" target="_blank" class="blog-part"><div class="blog-part-text">How Sustainable Architecture Is Shaping the Future</div></a></div>
+                <div class="blog-part-four"><a href="https://www.projectmanager.com/blog/architectural-design-process" target="_blank" class="blog-part"><div class="blog-part-text">Understanding the Architectural Design Process</div></a></div>
+            </div>
+        </article>
+        <!-- Article blog end -->
