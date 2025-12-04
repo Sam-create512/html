@@ -9,6 +9,9 @@
 html{
     scroll-behavior:smooth;
 }
+
+
+/* Header start*/
 .header{
     position: sticky;
     top: 0;
@@ -141,7 +144,11 @@ html{
     opacity: 1;
     animation: underline 0.3s forwards ease-out;
 }
+/* Header end */
 
+
+
+/* Article home start */
 .article-top{
     display: flex;
     background-image: url(../pictures/skyscrapers2.jpg);
@@ -188,36 +195,40 @@ html{
     margin-top: 30px;
     text-decoration: none;
 }
+/* Article home end*/
 
+
+
+/* Article about start*/
 .article-about{
     height: 1000px;
     display: flex;
     align-items: center;
 }
 
-.img-article-middle{
+.article-about-imgarea{
     width: 50vw;
     display: flex;
     justify-content: end;
     
 }
 
-.test{
+.article-about-textarea{
     width: 50vw;
     height: 850px;
 }
-.article-middle-text{
+
+.article-about-textblock{
     width: 450px;
     height: auto;
     margin-left: 80px;
     margin-top: 100px;
-
 }
 
-.article-nav{
+.article-heading{
     text-transform: uppercase;
     font-family: Roboto;
-    font-weight: 500;
+    font-weight: 500;           /* article heading style */
     opacity: 0.3;
     font-size: 25px;
     letter-spacing: 1px;
@@ -227,11 +238,14 @@ html{
 .article-text{
     font-family: Roboto;
     margin-top: 10px;
-    font-size: 17px;
+    font-size: 17px;             /* article text style */
     letter-spacing: 1px;
     word-spacing: 2px;
 
 }
+/* Article about end */
+
+
 
 /* Article projects start */
 .article-projects{
@@ -242,25 +256,22 @@ html{
     justify-content: space-around;
 }
 
-.article-projects-text{
+.article-projects-textare{
     display: flex;
     width: 50vw;
     height: auto;
     justify-content: end;
+    
 }
 
-.article-projects-textarea{
-    width:400px;
+.article-projects-textblock{
+    width:450px;
     height: auto;
     margin-top: 0px;
     margin-right: 80px;
 }
 
-.article-projects-text-top{
-    text-transform: uppercase;
-}
-
-.article-projects-image{
+.article-projects-imagearea{
     width: 50vw;
 }
 /* Article projects end */
@@ -270,6 +281,22 @@ html{
 /* Article services start */
 .article-services{
     height: 800px;
+    display: flex;
+    align-items: center;
+}
+.article-services-imgarea{
+    display: flex;
+    width: 50vw;
+    justify-content: end;
+}
+.article-services-textarea{
+    display: flex;
+    height: 600px;
+    margin-left: 80px;
+}
+.article-services-textblock{
+    height: auto;
+    width: 450px;
 }
 /* Article services end*/
 
@@ -289,3 +316,11 @@ html{
     height: 1000px;
 }
 /* Article pages end */
+
+
+
+/* Footer contact start */
+.footer-start{
+    background-color: gray;
+}
+/* Footer contact end */
