@@ -1,0 +1,60 @@
+.article-blog{
+    height: 800px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.article-blog-area{
+    display: flex;
+    height: 400px;
+    width: 1660px;
+    margin-top: 100px;
+    justify-content: space-between;
+
+}
+
+.blog-part{
+    display: flex;
+    width: 400px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 27px;
+    height: auto;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.blog-part-text{
+    align-self: end;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.blog-part-one{
+    background-image: url(../pictures/3D.jpg);
+    display: flex;
+}
+
+.blog-part-two{
+    background-image: url(../pictures/interior.jpg);
+    display: flex;
+}
+
+.blog-part-three{
+    background-image: url(../pictures/future.jpg);
+    display: flex;
+}
+
+.blog-part-four{
+    background-image: url(../pictures/understanding.jpg);
+    display: flex;   
+}
+
+.blog-part-one:hover{
+    opacity: 0.5;
+
+}

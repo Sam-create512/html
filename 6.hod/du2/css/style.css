@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* Header start */
+header{
+   background-color: rgb(255, 255, 255);
+   position: sticky;
+   top: 0;
+   width: 100%;
+   z-index: 1000;; 
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    max-width: 2360px;
+    margin: 0 auto;
+    padding: 0 60px;
+    width: 100%;
+}
+
+/* Logo start */
+
+.logo-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.upper-logo{
+    font-family: Bodoni Moda;
+    font-weight: 600;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.lower-logo{
+    font-size: 13px;
+    letter-spacing: 1.75px;
+    opacity: 0.6;
+}
+/* Logo end */
+
+/* Nav start */
+.nav-content{
+    font-family:Roboto;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    padding: 0;
+}
+.nav-item{
+
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+@keyframes underline{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.nav-link::after{
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    opacity: 0;
+}
+.nav-link:hover::after{
+    opacity: 1;
+    animation: underline 0.3s forwards ease-out;
+}
+/* Nav end */
+
+/* Button start */
+.btn-link{
+    display: flex;
+    width: 200px;
+    height: 60px;
+    border: rgb(0, 0, 0) solid 1px;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+.btn-link:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 0.3s;
+
+}
+/* Button end */
+
+
+
+/* Main start */
+/* Section home start */

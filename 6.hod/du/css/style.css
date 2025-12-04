@@ -6,7 +6,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 
+
+/* Header start*/
 .header{
     position: sticky;
     top: 0;
@@ -44,7 +49,7 @@
 
 .upper-logo{
     font-family: Bodoni Moda;
-    font-weight: 00;
+    font-weight: 600;
     font-size: 27px;
     letter-spacing: 2px;
 }
@@ -113,23 +118,37 @@
 /* .btn:active{
 
 } */
+
+@keyframes underline{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
 .nav-link::after{
     position: absolute;
     left: 0;
     bottom: -3px;
     content: "";
     display: block;
-    width: 100%;
+    width: 0%;
     height: 2px;
     background-color: black;
     opacity: 0;
-    transition: all .3s;
 }
 
 .nav-link:hover::after{
     opacity: 1;
+    animation: underline 0.3s forwards ease-out;
 }
+/* Header end */
 
+
+
+/* Article home start */
 .article-top{
     display: flex;
     background-image: url(../pictures/skyscrapers2.jpg);
@@ -159,7 +178,7 @@
     color: white;
     font-size: 18px;
 }
-.button-top{
+.button-middle{
     height: 57px;
     width: 270px;
     display: flex;
@@ -174,19 +193,134 @@
     color: white;
     border-color: white;
     margin-top: 30px;
+    text-decoration: none;
+}
+/* Article home end*/
+
+
+
+/* Article about start*/
+.article-about{
+    height: 1000px;
+    display: flex;
+    align-items: center;
 }
 
-.article-middle{
+.article-about-imgarea{
+    width: 50vw;
+    display: flex;
+    justify-content: end;
+    
+}
+
+.article-about-textarea{
+    width: 50vw;
+    height: 850px;
+}
+
+.article-about-textblock{
+    width: 450px;
+    height: auto;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.article-heading{
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 500;           /* article heading style */
+    opacity: 0.3;
+    font-size: 25px;
+    letter-spacing: 1px;
+
+}
+
+.article-text{
+    font-family: Roboto;
+    margin-top: 10px;
+    font-size: 17px;             /* article text style */
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+}
+/* Article about end */
+
+
+
+/* Article projects start */
+.article-projects{
+    display: flex;
+    height: 800px;
+    background-color: rgb(230, 230, 230);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.article-projects-textare{
+    display: flex;
+    width: 50vw;
+    height: auto;
+    justify-content: end;
+    
+}
+
+.article-projects-textblock{
+    width:450px;
+    height: auto;
+    margin-top: 0px;
+    margin-right: 80px;
+}
+
+.article-projects-imagearea{
+    width: 50vw;
+}
+/* Article projects end */
+
+
+
+/* Article services start */
+.article-services{
     height: 800px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-
-.img-article-middle{
-
+.article-services-imgarea{
+    display: flex;
+    width: 50vw;
+    justify-content: end;
 }
-
-.article-middle-text{
-
+.article-services-textarea{
+    display: flex;
+    height: 600px;
+    margin-left: 80px;
 }
+.article-services-textblock{
+    height: auto;
+    width: 450px;
+}
+/* Article services end*/
+
+
+
+/* Article blog start */
+.article-blog{
+    height: 800px;
+    background: rgb(230,230,230);
+}
+/* Article blog end */
+
+
+
+/* Article pages start */
+.article-pages{
+    height: 1000px;
+}
+/* Article pages end */
+
+
+
+/* Footer contact start */
+.footer-start{
+    background-color: gray;
+}
+/* Footer contact end */
