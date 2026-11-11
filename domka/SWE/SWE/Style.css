@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-padding-top: 100px;
+    scroll-behavior:smooth;
+}
+
+body{
+    max-width: 2560px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 12px;
+}
+
+.section-us-left, .section-services-right, .section-our-work-left, .section-contact-right{
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header start */
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content:space-between;
+    padding:0 60px;
+    max-width: 2560px;
+    align-items: center;
+    min-height:100px;
+}
+
+.nav-content{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.nav-list{
+    display: flex;
+    gap:25px;
+    list-style-type:none;
+}
+
+
+.nav-link{
+    text-decoration:none;
+    color: black;
+}
+/* Header end */
+
+
+/* Section Home start */
+.section-home{
+    min-height: 700px;
+    background:url(kuchyna2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-text{
+    margin-left: 120px;
+    width: fit-content;
+    display:inline-block;
+}
+
+.home-text h1{
+    font-size: 80px;
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px 5px 10px;
+}
+
+.home-text h3{
+    font-size: 40px;
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    padding: 5px 10px 10px 10px;
+}
+
+
+/* Section Home end */
+
+
+/* Section Us start */
+.section-us{
+    background-color: rgb(255, 255, 255);
+    min-height:700px;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+.section-us-left{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    padding-left: 120px;
+}
+
+.section-us-right{
+    height: 600px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Section Us end */
+
+
+/* Section Services start */
+.section-services{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    min-height:700px;
+    align-items:center ;
+    justify-content: center;
+}
+
+.section-services-right{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    padding-right: 120px;
+}
+
+.section-services-left{
+    height: 600px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Section Services end */
+
+
+/* Section Our Work start */
+.section-our-work{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    min-height:700px;
+    align-items:center ;
+    justify-content: center;
+}
+
+.section-our-work-left{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    padding-left: 120px;
+}
+
+.section-our-work-right{
+    height: 600px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Section Our Work end */
+
+
+/* Section Contact start */
+.section-contact{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    min-height:800px;
+    align-items:center ;
+    justify-content: center;
+}
+.section-contact-left{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-contact-right{
+    height: 700px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    padding-right: 120px;
+}
+.contact-form{
+    gap: 20px;
+    width: 500px;
+    font-size: 25px;
+}
+
+fieldset{
+    padding: 20px;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 200px;
+
+    font-size: 18px;
+}
+
+.section-contact-right a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.contact-map{
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+}
+/* Section Contact end */
+
+
+/* Footer start */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+    padding: 50px 0px;
+}
+/* Footer end */
+
+@media (max-width: 1024px) and (min-width: 769px){
+
+    .header-content{
+        padding: 0 30px;
+    }
+
+    .nav-content{
+        font-size: 20px;
+    }
+
+    .nav-list{
+        gap: 15px;
+    }
+
+    .home-text{
+        margin-left: 60px;
+    }
+
+    .home-text h1{
+        font-size: 60px;
+    }
+
+    .home-text h3{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 34px;
+    }
+
+    .section-us-left,
+    .section-services-right,
+    .section-our-work-left,
+    .section-contact-right{
+        font-size: 22px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .section-us-right,
+    .section-services-left,
+    .section-our-work-right{
+        padding: 20px;
+    }
+
+    .section-contact{
+        min-height: auto;
+        padding: 50px 20px;
+    }
+
+    .contact-form{
+        width: 100%;
+        max-width: 400px;
+        font-size: 20px;
+    }
+
+    fieldset{
+        padding: 15px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    textarea{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    textarea{
+        height: 150px;
+    }
+
+    .contact-map{
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px){
+
+    html{
+        scroll-padding-top: 20px;
+    }
+
+    header{
+        position: static;
+    }
+
+    .header-content{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .section-us,
+    .section-services,
+    .section-our-work,
+    .section-contact{
+        flex-direction: column;
+        min-height: auto;
+        padding: 50px 20px;
+    }
+
+    .section-services{
+        flex-direction: column-reverse;
+    }
+
+    .section-us-left,
+    .section-us-right,
+    .section-services-left,
+    .section-services-right,
+    .section-our-work-left,
+    .section-our-work-right,
+    .section-contact-left,
+    .section-contact-right{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .section-us-right,
+    .section-services-left,
+    .section-our-work-right{
+        margin-top: 30px;
+    }
+
+    .section-contact-left{
+        margin-bottom: 40px;
+    }
+
+    .section-us-left,
+    .section-services-right,
+    .section-our-work-left,
+    .section-contact-right{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .home-text{
+        margin: 0 20px;
+    }
+
+    .home-text h1{
+        font-size: 42px;
+    }
+
+    .home-text h3{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 34px;
+    }
+
+    .contact-form{
+        width: 100%;
+        max-width: 350px;
+        font-size: 18px;
+    }
+
+    fieldset{
+        padding: 15px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    textarea{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    textarea{
+        height: 120px;
+    }
+
+    .contact-map{
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .contact-form{
+        max-width: 280px;
+        font-size: 16px;
+    }
+
+    fieldset{
+        padding: 10px;
+    }
+
+    legend{
+        font-size: 18px;
+    }
+
+    textarea{
+        height: 100px;
+    }
+}
